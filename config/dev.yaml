@@ -1,0 +1,21 @@
+# Config based on the Environment we are running on
+
+SYNTHESIA_DEMO: v0.0.1
+
+TOKEN: "SYNTHESIA_DEMO"
+REDIS:
+    host: 127.0.0.1
+    port: 6379
+    db: 0
+UNRELIABLE_URL:
+    URL: "https://hiring.api.synthesia.io/crypto/sign"
+    time_out: 1
+    auth: 1a1c4a0edaa7b8cbc82eb52a6baf4c8d
+    RATE_LIMITING:
+        request_per_minute: 10
+        redis_key: unreliable_url
+SQS:
+    queue_name: process
+
+
+
